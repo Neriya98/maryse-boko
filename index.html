@@ -18,19 +18,9 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
 </head>
 <body>
-    <!-- Audio Player for Playlist -->
-    <div class="audio-player" id="audioPlayer">
-        <div class="audio-controls">
-            <button class="audio-btn" id="playPauseBtn">▶️</button>
-            <div class="audio-info">
-                <span class="audio-title" id="audioTitle">Arguments de vente - Maryse</span>
-                <div class="audio-progress">
-                    <div class="progress-bar" id="progressBar"></div>
-                </div>
-            </div>
-            <button class="audio-btn" id="nextBtn">⏭️</button>
-            <button class="audio-btn" id="closeAudioBtn">✖️</button>
-        </div>
+    <!-- Simple Audio Player -->
+    <div class="simple-audio-player" id="audioPlayer">
+        <button class="audio-toggle-btn" id="audioToggleBtn">▶️</button>
         <audio id="audioElement" preload="metadata">
             <source src="audio/demo1.mp3" type="audio/mpeg">
         </audio>
@@ -89,20 +79,6 @@
                 <div class="hero-cta animate-fade-up-delay-4">
                     <a href="#services" class="btn btn-primary btn-glow">Découvrir mes services</a>
                     <a href="#contact" class="btn btn-outline btn-sparkle">Collaborons ensemble</a>
-                    <button class="btn btn-secondary" id="playlistBtn">🎵 Écouter ma démo</button>
-                </div>
-                
-                <!-- Partners Logos integrated in hero -->
-                <div class="hero-partners">
-                    <p class="partners-intro">Ils m'ont fait confiance :</p>
-                    <div class="partners-logos">
-                        <img src="https://semecity.com/wp-content/uploads/2023/03/logo-seme-city.png" alt="Sèmè City" class="partner-logo">
-                        <img src="https://wamiyi-trip.com/assets/logo-_x25J-0o.png" alt="Wa Mi i Trip" class="partner-logo">
-                        <img src="https://pointvirgule.studio/wp-content/uploads/2024/02/Point-Virgule-logo.png" alt="Studio Point Virgule" class="partner-logo">
-                        <img src="https://mbmarket.bj/assets/images/logo-mb-market.png" alt="MB Market" class="partner-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google" class="partner-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Meta" class="partner-logo">
-                    </div>
                 </div>
             </div>
             <div class="hero-visual">
@@ -115,6 +91,20 @@
         <div class="scroll-indicator">
             <div class="scroll-text">Découvrir</div>
             <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-grid">
+                <img src="https://semecity.com/wp-content/uploads/2023/03/logo-seme-city.png" alt="Sèmè City" class="partner-logo">
+                <img src="https://wamiyi-trip.com/assets/logo-_x25J-0o.png" alt="Wa Mi i Trip" class="partner-logo">
+                <img src="https://pointvirgule.studio/wp-content/uploads/2024/02/Point-Virgule-logo.png" alt="Studio Point Virgule" class="partner-logo">
+                <img src="https://mbmarket.bj/assets/images/logo-mb-market.png" alt="MB Market" class="partner-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google" class="partner-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Meta" class="partner-logo">
+            </div>
         </div>
     </section>
 

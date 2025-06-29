@@ -13,7 +13,52 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallax();
     initFAQ();
     initFloatingElements();
+    initSimpleAudioPlayer(); // Initialize the audio player
 });
+
+// Initialize simple audio player with autoplay
+function initSimpleAudioPlayer() {
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioToggleBtn = document.getElementById('audioToggleBtn');
+    const audioElement = document.getElementById('audioElement');
+    
+    if (!audioPlayer || !audioToggleBtn || !audioElement) return;
+    
+    let isPlaying = false;
+    
+    // Function to play audio
+    function playAudio() {
+        audioElement.play().catch(error => {
+            console.error('Auto-play prevented:', error);
+            // Modern browsers require user interaction before playing audio
+            // We'll show a more prominent play button when auto-play is blocked
+            audioToggleBtn.classList.add('attention');
+        });
+        audioToggleBtn.textContent = '⏸️';
+        isPlaying = true;
+    }
+    
+    // Function to pause audio
+    function pauseAudio() {
+        audioElement.pause();
+        audioToggleBtn.textContent = '▶️';
+        isPlaying = false;
+    }
+    
+    // Toggle play/pause
+    audioToggleBtn.addEventListener('click', function() {
+        if (isPlaying) {
+            pauseAudio();
+        } else {
+            playAudio();
+        }
+    });
+    
+    // Auto-play after 5 seconds
+    setTimeout(() => {
+        playAudio();
+    }, 5000);
+}
 
 // Navigation functionality with auto-hide on scroll
 function initNavigation() {
