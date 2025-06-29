@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A professional portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -s . -l 3000",
+    "start": "npx serve -s . -l 3000",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["portfolio", "website", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT"
+}
