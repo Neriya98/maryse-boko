@@ -3,6 +3,7 @@
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
+    initThemeToggle(); // Initialize theme toggle first for immediate visual effect
     initNavigation();
     initScrollEffects();
     initAnimations();
@@ -567,6 +568,55 @@ function initContactForm() {
             clearFieldError(this);
         });
     });
+}
+
+// Initialize Theme Toggle for Dark/Light Mode
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Check user's preferred theme from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    
+    // Apply saved theme or check system preference
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+    } else if (savedTheme === null) {
+        // If no saved preference, check system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    }
+    
+    // Toggle theme when the button is clicked
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-theme');
+            
+            // Save user preference to localStorage
+            if (body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+    
+    // Listen for system theme changes
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (localStorage.getItem('theme') === null) { // Only apply if user hasn't set a preference
+                if (e.matches) {
+                    body.classList.add('dark-theme');
+                } else {
+                    body.classList.remove('dark-theme');
+                }
+            }
+        });
+    }
 }
 
 // Enhanced form validation with French messages
