@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryse BOKO - Freelance Créative</title>
+    <meta name="description" content="Maryse BOKO - Freelance spécialisée en voix-off, community management et communication digitale. Donnons vie à vos projets ensemble !">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+</head>
+<body>
+    <!-- Audio Player for Playlist -->
+    <div class="audio-player" id="audioPlayer">
+        <div class="audio-controls">
+            <button class="audio-btn" id="playPauseBtn">▶️</button>
+            <div class="audio-info">
+                <span class="audio-title" id="audioTitle">Arguments de vente - Maryse</span>
+                <div class="audio-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            <button class="audio-btn" id="nextBtn">⏭️</button>
+            <button class="audio-btn" id="closeAudioBtn">✖️</button>
+        </div>
+        <audio id="audioElement" preload="metadata">
+            <source src="audio/demo1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-shape shape-1">✨</div>
+        <div class="floating-shape shape-2">🎵</div>
+        <div class="floating-shape shape-3">💫</div>
+        <div class="floating-shape shape-4">🌸</div>
+        <div class="floating-shape shape-5">🦋</div>
+        <div class="floating-shape shape-6">💎</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">Maryse</span>
+                    <span class="logo-accent">✨</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Hero Background" class="hero-image">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line animate-slide-up">Bonjour, je suis</span>
+                    <span class="title-name animate-slide-up-delay">Maryse BOKO</span>
+                    <span class="title-subtitle animate-slide-up-delay-2">Freelance Créative</span>
+                </h1>
+                <p class="hero-description animate-fade-up-delay-3">
+                    Voix-off • Community Management • Communication Digitale
+                </p>
+                <div class="hero-cta animate-fade-up-delay-4">
+                    <a href="#services" class="btn btn-primary btn-glow">Découvrir mes services</a>
+                    <a href="#contact" class="btn btn-outline btn-sparkle">Collaborons ensemble</a>
+                    <button class="btn btn-secondary" id="playlistBtn">🎵 Écouter ma démo</button>
+                </div>
+                
+                <!-- Partners Logos integrated in hero -->
+                <div class="hero-partners">
+                    <p class="partners-intro">Ils m'ont fait confiance :</p>
+                    <div class="partners-logos">
+                        <img src="https://semecity.com/wp-content/uploads/2023/03/logo-seme-city.png" alt="Sèmè City" class="partner-logo">
+                        <img src="https://wamiyi-trip.com/assets/logo-_x25J-0o.png" alt="Wa Mi i Trip" class="partner-logo">
+                        <img src="https://pointvirgule.studio/wp-content/uploads/2024/02/Point-Virgule-logo.png" alt="Studio Point Virgule" class="partner-logo">
+                        <img src="https://mbmarket.bj/assets/images/logo-mb-market.png" alt="MB Market" class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google" class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Meta" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container animate-float">
+                    <img src="img/maryse2.jpg" alt="Maryse BOKO" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Découvrir</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Mes</span> Services
+                <div class="title-decoration">🌟</div>
+            </h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <div class="icon-bg"></div>
+                        🎤
+                    </div>
+                    <h3>Voix-off</h3>
+                    <p>Donnez une voix unique à vos projets avec des enregistrements professionnels et expressifs.</p>
+                    <ul class="service-features">
+                        <li>Publicités & Spots radio</li>
+                        <li>Narration documentaire</li>
+                        <li>Doublage & Synchronisation</li>
+                        <li>Podcasts & Audiobooks</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <div class="icon-bg"></div>
+                        💬
+                    </div>
+                    <h3>Community Management</h3>
+                    <p>Créons ensemble une communauté engagée autour de votre marque avec créativité et authenticité.</p>
+                    <ul class="service-features">
+                        <li>Stratégie de contenu</li>
+                        <li>Animation des réseaux</li>
+                        <li>Création visuelle</li>
+                        <li>Analyse & Reporting</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <div class="icon-bg"></div>
+                        ✨
+                    </div>
+                    <h3>Communication Digitale</h3>
+                    <p>Développons votre présence en ligne avec une communication impactante et sur-mesure.</p>
+                    <ul class="service-features">
+                        <li>Stratégie digitale</li>
+                        <li>Rédaction web</li>
+                        <li>Campagnes publicitaires</li>
+                        <li>Branding & Identité</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="recent-projects" id="recent-projects">
+        <div class="container">
+            <h2 class="section-title">
+                Mes <span class="title-accent">Réalisations</span>
+                <div class="title-decoration">🎨</div>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card enhanced" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Campagne Voix-off">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <div class="project-category">🎤 Voix-off</div>
+                                <h3>Campagne Publicitaire</h3>
+                                <p>Voix-off sensuelle pour une marque de cosmétiques haut de gamme diffusée nationalement</p>
+                                <div class="project-stats">
+                                    <span class="stat">📺 TV Nationale</span>
+                                    <span class="stat">📻 Radio Premium</span>
+                                    <span class="stat">⭐ 4.9/5</span>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-secondary btn-small">🎧 Écouter</button>
+                                    <button class="btn btn-outline btn-small">📋 Détails</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card enhanced" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Community Management">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <div class="project-category">💬 Community</div>
+                                <h3>TechStart - Social Media</h3>
+                                <p>Community management complet avec croissance explosive de 0 à 150K followers</p>
+                                <div class="project-stats">
+                                    <span class="stat">📈 +150K followers</span>
+                                    <span class="stat">💬 8.5% engagement</span>
+                                    <span class="stat">🚀 8 mois</span>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-secondary btn-small">📊 Résultats</button>
+                                    <button class="btn btn-outline btn-small">📋 Case Study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card enhanced" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Communication Digitale">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <div class="project-category">✨ Digital</div>
+                                <h3>Identité de Marque</h3>
+                                <p>Communication digitale 360° pour un studio créatif avec stratégie complète</p>
+                                <div class="project-stats">
+                                    <span class="stat">🎨 Branding complet</span>
+                                    <span class="stat">📱 Multi-plateformes</span>
+                                    <span class="stat">💎 Premium</span>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-secondary btn-small">🌐 Voir</button>
+                                    <button class="btn btn-outline btn-small">📋 Process</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="projects.html" class="btn btn-outline btn-sparkle">Voir tous mes projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">
+                Ils me font <span class="title-accent">confiance</span>
+                <div class="title-decoration">💖</div>
+            </h2>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>Maryse a donné vie à notre campagne publicitaire avec sa voix exceptionnelle. Son professionnalisme et sa créativité ont dépassé nos attentes !</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Sophie Martin">
+                            <div>
+                                <h4>Sophie Martin</h4>
+                                <span>Directrice Marketing, BeautyBrand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>Grâce à Maryse, notre communauté Instagram a triplé en 6 mois. Son approche créative et authentique fait toute la différence !</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Thomas Dubois">
+                            <div>
+                                <h4>Thomas Dubois</h4>
+                                <span>CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>Une collaboration exceptionnelle ! Maryse a su comprendre notre vision et l'a transformée en une stratégie digitale gagnante.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Marie Leroy">
+                            <div>
+                                <h4>Marie Leroy</h4>
+                                <span>Fondatrice, CreativeStudio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev" id="testimonial-prev">‹</button>
+                <div class="testimonial-dots" id="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next" id="testimonial-next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Prête à donner vie à vos projets ?</h2>
+                <p>Collaborons ensemble pour créer quelque chose d'extraordinaire !</p>
+                <a href="contact.html" class="btn btn-primary btn-large btn-glow">Commençons l'aventure</a>
+            </div>
+            <div class="cta-decoration">
+                <div class="decoration-element">🌟</div>
+                <div class="decoration-element">✨</div>
+                <div class="decoration-element">💫</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maryse BOKO</h3>
+                    <p>Freelance Créative</p>
+                    <p>Voix-off • Community • Digital</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span>💼</span>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="social-link">
+                            <span>🎵</span>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <span>🎬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maryse BOKO. Tous droits réservés. Fait avec 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

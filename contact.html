@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maryse BOKO</title>
+    <meta name="description" content="Contactez Maryse BOKO pour vos projets créatifs. Réponse rapide et devis personnalisé pour tous vos besoins en voix-off et communication digitale.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-shape shape-1">✨</div>
+        <div class="floating-shape shape-2">🎵</div>
+        <div class="floating-shape shape-3">💫</div>
+        <div class="floating-shape shape-4">🌸</div>
+        <div class="floating-shape shape-5">🦋</div>
+        <div class="floating-shape shape-6">💎</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">Maryse</span>
+                    <span class="logo-accent">✨</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+                <a href="projects.html" class="nav-link">Portfolio</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Parlons de votre <span class="title-accent">Projet</span></h1>
+            <p class="page-subtitle">Transformons vos idées en réalité créative !</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Créons ensemble ! 🚀</h2>
+                    <p>Vous avez un projet en tête ? Une idée folle ? Ou simplement envie de discuter créativité ? Je suis là pour vous accompagner avec passion et professionnalisme !</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>maryse@creativevoice.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p>+33 6 12 34 56 78</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Localisation</h3>
+                                <p>Paris & Région Parisienne</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🎤</div>
+                            <div>
+                                <h3>Studio</h3>
+                                <p>Équipement professionnel</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="response-time">
+                        <h3>⚡ Temps de réponse</h3>
+                        <p>Je réponds généralement sous 2h en semaine !</p>
+                        <div class="availability">
+                            <span class="status-indicator"></span>
+                            <span>Disponible pour nouveaux projets</span>
+                        </div>
+                    </div>
+
+                    <div class="social-preview">
+                        <h3>Retrouvez-moi aussi sur :</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <span>📷</span>
+                                <small>Instagram</small>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <span>💼</span>
+                                <small>LinkedIn</small>
+                            </a>
+                            <a href="#" aria-label="TikTok" class="social-link">
+                                <span>🎵</span>
+                                <small>TikTok</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" id="prenom" name="prenom" required>
+                                <span class="error-message" id="prenom-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" required>
+                                <span class="error-message" id="nom-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="entreprise">Entreprise / Organisation</label>
+                            <input type="text" id="entreprise" name="entreprise">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Type de service *</label>
+                                <select id="service-type" name="service-type" required>
+                                    <option value="">Choisissez un service</option>
+                                    <option value="voiceover">🎤 Voix-off</option>
+                                    <option value="community">💬 Community Management</option>
+                                    <option value="digital">✨ Communication Digitale</option>
+                                    <option value="formation">📚 Formation</option>
+                                    <option value="conseil">💡 Conseil & Stratégie</option>
+                                    <option value="autre">🌟 Autre projet créatif</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget indicatif</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez une fourchette</option>
+                                    <option value="500-1000">500€ - 1 000€</option>
+                                    <option value="1000-2500">1 000€ - 2 500€</option>
+                                    <option value="2500-5000">2 500€ - 5 000€</option>
+                                    <option value="5000-10000">5 000€ - 10 000€</option>
+                                    <option value="10000+">10 000€+</option>
+                                    <option value="mensuel">Collaboration mensuelle</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="echeance">Échéance souhaitée</label>
+                            <select id="echeance" name="echeance">
+                                <option value="">Quand souhaitez-vous commencer ?</option>
+                                <option value="urgent">🚨 Urgent (sous 48h)</option>
+                                <option value="semaine">📅 Cette semaine</option>
+                                <option value="mois">🗓️ Ce mois-ci</option>
+                                <option value="trimestre">⏰ Dans les 3 mois</option>
+                                <option value="flexible">🌸 Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Parlez-moi de votre projet ! *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre projet, vos objectifs, votre univers... Plus vous me donnez de détails, mieux je pourrai vous accompagner ! ✨"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                J'aimerais recevoir vos conseils créatifs et actualités (1 fois/mois max) 💌
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-glow" id="submit-btn">
+                            <span class="btn-text">✨ Envoyer mon message</span>
+                            <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <div class="success-icon">🎉</div>
+                        <h3>Message envoyé avec succès !</h3>
+                        <p>Merci pour votre confiance ! Je reviens vers vous très rapidement (généralement sous 2h) pour discuter de votre projet. 💖</p>
+                        <div class="success-next-steps">
+                            <h4>Et maintenant ?</h4>
+                            <ul>
+                                <li>📧 Vous recevrez une confirmation par email</li>
+                                <li>📞 Je vous recontacte sous 2h en semaine</li>
+                                <li>☕ On programme un appel découverte</li>
+                                <li>🚀 On lance votre projet !</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Questions <span class="title-accent">Pratiques</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h4>💰 Comment se déroule la facturation ?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour les projets ponctuels : 50% à la commande, 50% à la livraison. Pour les collaborations mensuelles : facturation en début de mois. Paiement par virement ou PayPal.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>📍 Travaillez-vous à distance ?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Je travaille avec des clients partout en France et à l'international. Pour les projets voix-off, j'ai un studio professionnel à domicile. Rencontres possibles sur Paris.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>⏰ Quels sont vos délais habituels ?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Voix-off : 48-72h. Community management : démarrage sous 1 semaine. Projets digitaux : selon l'ampleur, de 1 à 4 semaines. Urgences possibles avec supplément.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h4>🤝 Proposez-vous des partenariats ?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui ! Je collabore régulièrement avec des agences, autres freelances et entreprises. N'hésitez pas à me contacter pour discuter d'opportunités de collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maryse BOKO</h3>
+                    <p>Freelance Créative</p>
+                    <p>Voix-off • Community • Digital</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span>💼</span>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="social-link">
+                            <span>🎵</span>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <span>🎬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maryse BOKO. Tous droits réservés. Fait avec 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

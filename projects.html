@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Camille Dubois</title>
+    <meta name="description" content="Découvrez mes réalisations créatives : projets voice-over, campagnes de community management et stratégies de communication digitale.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-shape shape-1">✨</div>
+        <div class="floating-shape shape-2">🎵</div>
+        <div class="floating-shape shape-3">💫</div>
+        <div class="floating-shape shape-4">🌸</div>
+        <div class="floating-shape shape-5">🦋</div>
+        <div class="floating-shape shape-6">💎</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">Camille</span>
+                    <span class="logo-accent">✨</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+                <a href="projects.html" class="nav-link active">Portfolio</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Mon <span class="title-accent">Portfolio</span></h1>
+            <p class="page-subtitle">Une sélection de mes créations les plus inspirantes</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">✨ Tous les projets</button>
+                <button class="filter-btn" data-filter="voiceover">🎤 Voice-Over</button>
+                <button class="filter-btn" data-filter="community">💬 Community</button>
+                <button class="filter-btn" data-filter="digital">🌟 Digital</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Voice-Over Projects -->
+                <div class="project-card" data-category="voiceover" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Campagne Publicitaire Cosmétiques">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Campagne Cosmétiques Luxe</h3>
+                                <p>Voice-over sensuelle et élégante pour une marque de cosmétiques haut de gamme. Diffusion nationale TV et radio.</p>
+                                <div class="project-tags">
+                                    <span>Voice-Over</span>
+                                    <span>Publicité TV</span>
+                                    <span>Luxe</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('cosmetics')">Écouter</a>
+                                    <a href="#" class="btn btn-outline">Détails</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="voiceover" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Documentaire Nature">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Documentaire "Océans Sauvages"</h3>
+                                <p>Narration poétique et immersive pour un documentaire sur la biodiversité marine. Diffusion France 5.</p>
+                                <div class="project-tags">
+                                    <span>Narration</span>
+                                    <span>Documentaire</span>
+                                    <span>Nature</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('documentary')">Écouter</a>
+                                    <a href="#" class="btn btn-outline">Détails</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Management Projects -->
+                <div class="project-card" data-category="community" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Startup Tech">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>TechStart - Stratégie Social Media</h3>
+                                <p>Community management complet pour une startup tech. Croissance de 0 à 150K followers en 8 mois.</p>
+                                <div class="project-tags">
+                                    <span>Instagram</span>
+                                    <span>LinkedIn</span>
+                                    <span>Stratégie</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('techstart')">Voir le projet</a>
+                                    <a href="#" class="btn btn-outline">Résultats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="community" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Marque Mode">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Bella Mode - Influence Marketing</h3>
+                                <p>Campagne d'influence et gestion de communauté pour une marque de mode éthique. Engagement +300%.</p>
+                                <div class="project-tags">
+                                    <span>TikTok</span>
+                                    <span>Influence</span>
+                                    <span>Mode</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('fashion')">Voir le projet</a>
+                                    <a href="#" class="btn btn-outline">Résultats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Communication Projects -->
+                <div class="project-card" data-category="digital" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Identité de Marque">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>CreativeStudio - Identité Complète</h3>
+                                <p>Création d'identité de marque et stratégie de communication digitale 360° pour un studio créatif.</p>
+                                <div class="project-tags">
+                                    <span>Branding</span>
+                                    <span>Stratégie</span>
+                                    <span>Digital</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('branding')">Voir le projet</a>
+                                    <a href="#" class="btn btn-outline">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="digital" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Restaurant Digital">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Bistrot Moderne - Transformation Digitale</h3>
+                                <p>Accompagnement digital complet d'un restaurant : site web, réseaux sociaux et stratégie de contenu.</p>
+                                <div class="project-tags">
+                                    <span>Web</span>
+                                    <span>Restauration</span>
+                                    <span>Local</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('restaurant')">Voir le projet</a>
+                                    <a href="#" class="btn btn-outline">Résultats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixed Projects -->
+                <div class="project-card" data-category="voiceover" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Podcast Série">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Podcast "Femmes Inspirantes"</h3>
+                                <p>Animation et production d'un podcast hebdomadaire sur l'entrepreneuriat féminin. 50K écoutes/mois.</p>
+                                <div class="project-tags">
+                                    <span>Podcast</span>
+                                    <span>Animation</span>
+                                    <span>Entrepreneuriat</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('podcast')">Écouter</a>
+                                    <a href="#" class="btn btn-outline">Épisodes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="community" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Campagne Solidaire">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Campagne #EnsemblePourDemain</h3>
+                                <p>Campagne de sensibilisation sociale avec création de contenu viral et mobilisation communautaire.</p>
+                                <div class="project-tags">
+                                    <span>Social Impact</span>
+                                    <span>Viral</span>
+                                    <span>Engagement</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('social')">Voir la campagne</a>
+                                    <a href="#" class="btn btn-outline">Impact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="digital" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Formation Digital">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Formation "Digital Créatif"</h3>
+                                <p>Création et animation d'une formation en ligne sur la communication digitale créative. 500+ participants.</p>
+                                <div class="project-tags">
+                                    <span>Formation</span>
+                                    <span>E-learning</span>
+                                    <span>Créativité</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('formation')">Découvrir</a>
+                                    <a href="#" class="btn btn-outline">Programme</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeProjectModal()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Un projet en tête ?</h2>
+                <p>Créons ensemble quelque chose d'extraordinaire !</p>
+                <a href="contact.html" class="btn btn-primary btn-large btn-glow">Discutons de votre projet</a>
+            </div>
+            <div class="cta-decoration">
+                <div class="decoration-element">🌟</div>
+                <div class="decoration-element">✨</div>
+                <div class="decoration-element">💫</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Camille Dubois</h3>
+                    <p>Freelance Créative</p>
+                    <p>Voice-over • Community • Digital</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span>💼</span>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="social-link">
+                            <span>🎵</span>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <span>🎬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Camille Dubois. Tous droits réservés. Fait avec 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
